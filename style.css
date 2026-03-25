@@ -1,0 +1,116 @@
+:root {
+    --primary: #007AFF;
+    --danger: #FF3B30;
+    --bg: #F2F2F7;
+    --secondary: #5856D6;
+}
+
+body {
+    font-family: -apple-system, sans-serif;
+    background: var(--bg);
+    padding: 15px;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+h2 { color: var(--primary); text-align: center; margin: 0; }
+.subtitle { text-align: center; color: #8E8E93; font-size: 12px; margin-bottom: 20px; }
+
+.header-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+}
+
+label {
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    color: #8E8E93;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #C6C6C8;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+hr { border: 0; border-top: 1px solid #EEE; margin: 20px 0; }
+
+.drug-row {
+    background: #F8F9FA;
+    border: 1px solid #E5E5EA;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.drug-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+}
+
+.btn-remove {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: var(--danger);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-weight: bold;
+}
+
+.actions { display: flex; gap: 10px; margin-top: 20px; }
+
+.btn-add {
+    flex: 1;
+    background: var(--secondary);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.btn-calc {
+    flex: 2;
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.result-card {
+    display: none;
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    margin-top: 20px;
+    border-top: 5px solid var(--primary);
+}
+
+table { width: 100%; border-collapse: collapse; }
+td, th { padding: 10px 0; border-bottom: 1px solid #F2F2F7; text-align: left; }
+.final-val { font-weight: bold; color: var(--primary); text-align: right; }
